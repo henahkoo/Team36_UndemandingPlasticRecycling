@@ -1,0 +1,6 @@
+<h1>Welcome to page 2 !</h1>
+{% if filename %}
+<img src="{{ url_for('send_file', filename=filename) }}">
+{% else %}
+<h1>no image for whatever reason</h1>
+{% endif %}
